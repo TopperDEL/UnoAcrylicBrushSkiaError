@@ -16,9 +16,17 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <controls:SkiaSharpImageControl x:Name="sampleImage1" Grid.Row="0"/>
-                <controls:SkiaSharpImageControl x:Name="sampleImage2" Grid.Row="1"/>
-                <controls:SkiaSharpImageControl x:Name="sampleImage3" Grid.Row="2"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <controls:SkiaSharpImageControl x:Name="sampleImage1" Grid.Row="0" Grid.Column="0"/>
+                <controls:SkiaSharpImageControl x:Name="sampleImage2" Grid.Row="1" Grid.Column="0"/>
+                <controls:SkiaSharpImageControl x:Name="sampleImage3" Grid.Row="2" Grid.Column="0"/>
+
+                <Image Source="https://picsum.photos/seed/random1/4000/3000" Grid.Row="0" Grid.Column="1"/>
+                <Image Source="https://picsum.photos/seed/random2/4000/3000" Grid.Row="1" Grid.Column="1"/>
+                <Image Source="https://picsum.photos/seed/random3/4000/3000" Grid.Row="2" Grid.Column="1"/>
             </Grid>
         </ScrollViewer>
         <Border BorderThickness="0" MaxHeight="100">
